@@ -38,5 +38,10 @@
 			</div>
 		</div>
 	{/if}
+	<script type="text/javascript">
+		$(document.body).ready(function(){
+			$('.dropdown-toggle').dropdown();
+		});
+	</script>
 	</body>
 </html>
