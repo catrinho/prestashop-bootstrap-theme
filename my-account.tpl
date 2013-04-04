@@ -37,13 +37,13 @@
 	{if $has_customer_an_address}
 	<li><a href="{$link->getPageLink('address', true)}" title="{l s='Add my first address'}"><img src="{$img_dir}icon/addrbook.gif" alt="{l s='Add my first address'}" class="icon" /> {l s='Add my first address'}</a></li>
 	{/if}
-	<li><a href="{$link->getPageLink('history', true)}" title="{l s='Orders'}"><img src="{$img_dir}icon/order.gif" alt="{l s='Orders'}" class="icon" /> {l s='History and details of my orders'}</a></li>
+	<li><a href="{$link->getPageLink('history', true)}" title="{l s='Orders'}"><!-- <img src="{$img_dir}icon/order.gif" alt="{l s='Orders'}" class="icon" /> --><i class="icon-shopping-cart"></i> {l s='History and details of my orders'}</a></li>
 	{if $returnAllowed}
 		<li><a href="{$link->getPageLink('order-follow', true)}" title="{l s='Merchandise returns'}"><img src="{$img_dir}icon/return.gif" alt="{l s='Merchandise returns'}" class="icon" /> {l s='My merchandise returns'}</a></li>
 	{/if}
-	<li><a href="{$link->getPageLink('order-slip', true)}" title="{l s='Credit slips'}"><img src="{$img_dir}icon/slip.gif" alt="{l s='Credit slips'}" class="icon" /> {l s='My credit slips'}</a></li>
-	<li><a href="{$link->getPageLink('addresses', true)}" title="{l s='Addresses'}"><img src="{$img_dir}icon/addrbook.gif" alt="{l s='Addresses'}" class="icon" /> {l s='My addresses'}</a></li>
-	<li><a href="{$link->getPageLink('identity', true)}" title="{l s='Information'}"><img src="{$img_dir}icon/userinfo.gif" alt="{l s='Information'}" class="icon" /> {l s='My personal information'}</a></li>
+	<li><a href="{$link->getPageLink('order-slip', true)}" title="{l s='Credit slips'}"><!-- <img src="{$img_dir}icon/slip.gif" alt="{l s='Credit slips'}" class="icon" /> --><i class="icon-book"></i> {l s='My credit slips'}</a></li>
+	<li><a href="{$link->getPageLink('addresses', true)}" title="{l s='Addresses'}"><!-- <img src="{$img_dir}icon/addrbook.gif" alt="{l s='Addresses'}" class="icon" /> --><i class="icon-map-marker"></i> {l s='My addresses'}</a></li>
+	<li><a href="{$link->getPageLink('identity', true)}" title="{l s='Information'}"><!-- <img src="{$img_dir}icon/userinfo.gif" alt="{l s='Information'}" class="icon" /> --><i class="icon-user"></i> {l s='My personal information'}</a></li>
 	{if $voucherAllowed}
 		<li><a href="{$link->getPageLink('discount', true)}" title="{l s='Vouchers'}"><img src="{$img_dir}icon/voucher.gif" alt="{l s='Vouchers'}" class="icon" /> {l s='My vouchers'}</a></li>
 	{/if}
