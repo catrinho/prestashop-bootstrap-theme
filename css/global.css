@@ -294,15 +294,15 @@ table.table_block  td {
 	.block .title_block, .block h4 {
 		padding:6px 11px;
 		font-size:12px;
-		color:#fff;
-		text-shadow:0 1px 0 #000;
+		color:#666666;
+		/*text-shadow:0 1px 0 #000;*/
 		text-transform:uppercase;
-		background:#383838;
+		background:#E9E9E9;
 		text-align:left;
 		font-weight: bold;
 		border-radius: 4px 4px 0 0;
 	}
-		.block .title_block a, .block h4 a {color:#fff}
+		.block .title_block a, .block h4 a {color:#666666}
 	.block ul {list-style-type:none}
 		.block li.last {	border:none}
 			.block li a {
