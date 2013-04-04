@@ -137,7 +137,7 @@ span.view_scroll_spacer {
 #pb-left-column {
 	float:left;
 	margin-left:14px;
-	width:255px;
+	/*width:255px;*/
 }
 
 #pb-left-column h1 {
