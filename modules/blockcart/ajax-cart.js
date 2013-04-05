@@ -34,7 +34,7 @@ var ajaxCart = {
 	//override every button in the page in relation to the cart
 	overrideButtonsInThePage : function(){
 		//for every 'add' buttons...
-		$('.ajax_add_to_cart_button').unbind('click').click(function(){
+		$('.ajax-add2cart-button-list').unbind('click').click(function(){
 			var idProduct =  $(this).attr('rel').replace('ajax_id_product_', '');
 			if ($(this).attr('disabled') != 'disabled')
 				ajaxCart.add(idProduct, null, false, this);
@@ -170,7 +170,8 @@ var ajaxCart = {
 			$('.ajax-add2cart-button').button('reset');
 			// $('#add_to_cart input').removeAttr('disabled').addClass('exclusive').removeClass('exclusive_disabled');
 		else
-			$('.ajax_add_to_cart_button').removeAttr('disabled');
+			$('.ajax-add2cart-button-list').button('reset');
+			// $('.ajax-add2cart-button-list').removeAttr('disabled');
 	},
 
 	// add a product in the cart via ajax
@@ -188,8 +189,10 @@ var ajaxCart = {
 			// $('#add_to_cart input').attr('disabled', true).removeClass('exclusive').addClass('exclusive_disabled');
 			// $('.filled').removeClass('filled');
 		}
-		else
-			$(callerElement).attr('disabled', true);
+		else{
+			$(callerElement).button('loading');
+			// $(callerElement).attr('disabled', true);
+		}
 
 		if ($('#cart_block_list').hasClass('collapsed'))
 			this.expand();

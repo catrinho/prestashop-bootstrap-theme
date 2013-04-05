@@ -41,7 +41,7 @@
 					<img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')}" alt="{$product.legend|escape:'htmlall':'UTF-8'}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if} />
 					{if isset($product.new) && $product.new == 1}<span class="new">{l s='New'}</span>{/if}
 				</a>
-				<h3><a href="{$product.link|escape:'htmlall':'UTF-8'}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|escape:'htmlall':'UTF-8'|truncate:35:'...'}</a></h3>
+				<h4><a href="{$product.link|escape:'htmlall':'UTF-8'}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|escape:'htmlall':'UTF-8'|truncate:35:'...'}</a></h4>
 				<p class="product_desc"><a href="{$product.link|escape:'htmlall':'UTF-8'}" title="{$product.description_short|strip_tags:'UTF-8'|truncate:360:'...'}" >{$product.description_short|strip_tags:'UTF-8'|truncate:360:'...'}</a></p>
 			</div>
 			<div class="span3 pull-right">
@@ -57,15 +57,15 @@
 				{if ($product.id_product_attribute == 0 || (isset($add_prod_display) && ($add_prod_display == 1))) && $product.available_for_order && !isset($restricted_country_mode) && $product.minimal_quantity <= 1 && $product.customizable != 2 && !$PS_CATALOG_MODE}
 					{if ($product.allow_oosp || $product.quantity > 0)}
 						{if isset($static_token)}
-							<a class="btn ajax-add2cart-button-from-list" rel="ajax_id_product_{$product.id_product|intval}" href="{$link->getPageLink('cart',false, NULL, "add&amp;id_product={$product.id_product|intval}&amp;token={$static_token}", false)}" title="{l s='Add to cart'}" data-loading-text="Добавляется..." autocomplete="off"><i class="icon-shopping-cart"></i>{l s='Add to cart'}</a>
+							<a class="btn ajax-add2cart-button-list btn-small" rel="ajax_id_product_{$product.id_product|intval}" href="{$link->getPageLink('cart',false, NULL, "add&amp;id_product={$product.id_product|intval}&amp;token={$static_token}", false)}" title="{l s='Add to cart'}" data-loading-text="Добавляется..." autocomplete="off" style="margin-bottom:10px;"><i class="icon-shopping-cart"></i>{l s='Add to cart'}</a>
 						{else}
-							<a class="btn ajax-add2cart-button-from-list" rel="ajax_id_product_{$product.id_product|intval}" href="{$link->getPageLink('cart',false, NULL, "add&amp;id_product={$product.id_product|intval}", false)}" title="{l s='Add to cart'}" data-loading-text="Добавляется..." autocomplete="off"><i class="icon-shopping-cart"></i>{l s='Add to cart'}</a>
+							<a class="btn ajax-add2cart-button-list" rel="ajax_id_product_{$product.id_product|intval}" href="{$link->getPageLink('cart',false, NULL, "add&amp;id_product={$product.id_product|intval}", false)}" title="{l s='Add to cart'}" data-loading-text="Добавляется..." autocomplete="off"><i class="icon-shopping-cart"></i>{l s='Add to cart'}</a>
 						{/if}						
 					{else}
 						<!--span class="exclusive"><span></span>{l s='Add to cart'}</span--><br />
 					{/if}
 				{/if}
-				<a class="btn btn-small btn-inverse" style="color:#FFFFFF;" href="{$product.link|escape:'htmlall':'UTF-8'}" title="{l s='View'}">{l s='View'} »</a>
+				<a style="margin-top:40px;" href="{$product.link|escape:'htmlall':'UTF-8'}" title="{l s='View'}"><span class="badge badge-info">{l s='View'} »</span></a>
 			</div>
 		</li>
 	{/foreach}
