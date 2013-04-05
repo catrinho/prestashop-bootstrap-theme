@@ -4,7 +4,7 @@
 	<!-- Menu -->
 
 	<div class="span12" style="margin-left:0px;">
-		<div class="navbar">
+		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<ul class="nav">
 					{$MENU}
