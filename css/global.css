@@ -43,7 +43,7 @@ a {cursor:pointer}
 	#columns {z-index:1}
 		#left_column {}
 		#center_column {}
-		#right_column {margin-top: -10px;}
+		#right_column {}
 	#footer {}
 
 
@@ -51,9 +51,10 @@ a {cursor:pointer}
 		generic style
 ************************************************************************************************ */
 body{
-	font:normal 11px/14px Arial, Verdana, sans-serif;
-	color:#222;
-	background:#fff
+	/*font:normal 11px/14px Arial, Verdana, sans-serif;*/
+	/*color:#222;*/
+	background:#fff;
+	padding-top: 45px;
 }
 body.content_only {
 	background: #FFF;
