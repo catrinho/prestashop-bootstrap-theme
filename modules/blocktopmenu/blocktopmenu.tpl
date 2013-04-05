@@ -6,6 +6,7 @@
 	<div class="span12" style="margin-left:0px;">
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
+				<a class="brand" href="/">Моно.кз</a>
 				<ul class="nav">
 					{$MENU}
 					{if $MENU_SEARCH}
