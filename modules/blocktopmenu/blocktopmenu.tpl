@@ -3,7 +3,7 @@
 
 	<!-- Menu -->
 
-	<div class="span12" style="margin-left:0px;">
+	<div class="">
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container-fluid nav-container">
