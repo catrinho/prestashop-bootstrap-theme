@@ -28,14 +28,14 @@
 
 {if isset($category)}
 	{if $category->id AND $category->active}
-		<h3>
+		<h4>
 			{strip}
 				{$category->name|escape:'htmlall':'UTF-8'}
 				{if isset($categoryNameComplement)}
 					{$categoryNameComplement|escape:'htmlall':'UTF-8'}
 				{/if}
 			{/strip}
-		</h3>
+		</h4>
 		
 		<div class="resumecat category-product-count well well-mini">
 			{include file="$tpl_dir./category-count.tpl"}
