@@ -393,11 +393,11 @@ $(function(){ldelim}
 	<div class="row-fluid">
 		<div class="span12 well">
 		<form action="{$link->getPageLink('authentication', true)}" method="post" id="new-account-register" class="">
+			{$HOOK_CREATE_ACCOUNT_TOP}
 		    <fieldset>
 		      <div id="legend" class="">
 		        <legend class="">Ваша персональная информация</legend>
 		      </div>
-			{$HOOK_CREATE_ACCOUNT_TOP}
 				<input type="hidden" name="id_gender" id="id_gender" value="0"  />
 			    <div class="btn-group" data-toggle="buttons-radio">
 				    <button type="button" class="btn btn-primary gender-select {if isset($smarty.post.id_gender) && $smarty.post.id_gender == 1}active{/if}" data-attr="1">Мужчина</button>
@@ -477,10 +477,10 @@ $(function(){ldelim}
 				      </label>
 		  			</div>
 		        </div>
-		{$HOOK_CREATE_ACCOUNT_FORM}
-		<input type="hidden" name="email_create" value="1" />
-		<input type="hidden" name="is_new_customer" value="1" />
-		{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'htmlall':'UTF-8'}" />{/if}
+				{$HOOK_CREATE_ACCOUNT_FORM}
+				<input type="hidden" name="email_create" value="1" />
+				<input type="hidden" name="is_new_customer" value="1" />
+				{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'htmlall':'UTF-8'}" />{/if}
 
 		    	<div class="control-group">
 		          <label class="control-label"></label>
