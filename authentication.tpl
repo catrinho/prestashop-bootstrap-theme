@@ -482,7 +482,7 @@ $(function(){ldelim}
 		          <label class="control-label"></label>
 		          <!-- Button -->
 		          <div class="controls">
-		            <button class="btn btn-primary" type="submit" name="submitAccount" id="submitAccount">Регистрировать</button>
+		            <button class="btn btn-primary" type="submit" name="submitAccount" value="yes" id="submitAccount">Регистрировать</button>
 		          </div>
 		        </div>
 
