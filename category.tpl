@@ -99,7 +99,7 @@
 			{include file="$tpl_dir./pagination.tpl"}
 			</div>
 			<div class="span6">
-			{include file="./product-sort.tpl"}
+			{*include file="./product-sort.tpl"*}
 			</div>
 		</div>
 			<!--div class="content_sortPagiBar">
